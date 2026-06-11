@@ -8,7 +8,7 @@ let moviesArray = [];
 
 async function fetchMovies(searchTerm) {
   const response = await fetch(
-    `http://www.omdbapi.com/?s=${searchTerm}&apikey=${API_KEY}`
+    `https://www.omdbapi.com/?s=${searchTerm}&apikey=${API_KEY}`
   );
   const data = await response.json();
 
