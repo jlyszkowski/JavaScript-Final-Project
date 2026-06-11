@@ -280,3 +280,29 @@ Button
 .search-bar button:active {
   transform: scale(0.95);
 }
+
+/*
+
+MEDIA
+
+*/
+
+.movies-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+/* Tablet */
+@media (max-width: 768px) {
+  .movies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* Phone */
+@media (max-width: 480px) {
+  .movies-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
